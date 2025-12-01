@@ -74,12 +74,12 @@ const fonts: FontsConfig = {
 // default customization applied to the HTML in the main layout.tsx
 const style: StyleConfig = {
   theme: "system", // dark | light | system
-  neutral: "gray", // sand | gray | slate | custom
-  brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
-  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
+  neutral: "slate", // sand | gray | slate | custom
+  brand: "emerald", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
+  accent: "magenta", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
-  solidStyle: "flat", // flat | plastic
-  border: "playful", // rounded | playful | conservative
+  solidStyle: "plastic", // flat | plastic
+  border: "rounded", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
   scaling: "100", // 90 | 95 | 100 | 105 | 110
@@ -87,7 +87,7 @@ const style: StyleConfig = {
 
 const dataStyle: DataStyleConfig = {
   variant: "gradient", // flat | gradient | outline
-  mode: "categorical", // categorical | divergent | sequential
+  mode: "sequential", // categorical | divergent | sequential
   height: 24, // default chart height
   axis: {
     stroke: "var(--neutral-alpha-weak)",
@@ -196,7 +196,7 @@ const schema: SchemaConfig = {
 // social links
 const sameAs: SameAsConfig = {
   threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
+  linkedin: "https://www.linkedin.com/in/musabbirsagar/",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 

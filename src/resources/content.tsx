@@ -1,15 +1,25 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import {
+  About,
+  Blog,
+  Gallery,
+  Home,
+  Newsletter,
+  Person,
+  Social,
+  Work,
+} from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Musabbir",
+  lastName: "Sagar",
+  name: `Musabbir Sagar`,
+  role: "Web Developer",
+  agency: "Grow your business with",
+  avatar: "/images/avatar.png",
+  email: "musabbir@thirdbracket.co.uk",
+  location: "Asia/Dhaka", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Bengali"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,25 +35,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/sagarmusabbir",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/musabbirsagar/",
     essential: true,
   },
   {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
+    name: "Facebook",
+    icon: "facebook",
+    link: "https://www.facebook.com/wwolverinee",
+    essential: true,
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Npm",
+    icon: "npm",
+    link: "https://www.npmjs.com/package/@thirdbracket/bracketui",
     essential: true,
   },
   {
@@ -56,11 +66,11 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/og.png",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>A developer with passion for UI/UX design</>,
   featured: {
     display: true,
     title: (
@@ -76,8 +86,13 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm Musabbir, creator of{" "}
+      <Text as="span" size="xl" weight="strong">
+        Bracket UI
+      </Text>
+      , where I build intuitive <br /> user experiences. After years, I build my
+      own projects.
+    </>
   ),
 };
 
@@ -102,9 +117,12 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        As a full stack developer, Musabbir Sagar has worked with Next.js and
+        Payload CMS since the early days and knows both systems inside out. His
+        focus on code-first architecture and advanced rendering techniques
+        consistently produces sites that outperform even the official Next.js
+        benchmarks. Along with building Bracket UI, he also leads development at
+        Third Bracket.
       </>
     ),
   },
@@ -113,41 +131,66 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Third Bracket",
+        timeframe: "2023 - Present",
+        role: "Founder",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Founded Third Bracket, a digital agency for bespoke web aplication a
+            nd digital marketing.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Bridged the gap beetween seasoned freelancers and professional
+            agency.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/project-01/cover1.png",
+            alt: "Third Bracket Project",
             width: 16,
-            height: 9,
+            height: 12,
+          },
+        ],
+      },
+
+      {
+        company: "Bracket UI",
+        timeframe: "2023 - Present",
+        role: "Founder",
+        achievements: [
+          <>
+            Founded Bracket UI, a slik, modern yet minimal component library
+            made for Next.js with tailwindcss.
+          </>,
+          <>
+            Designed and developed the UI component library and maintaining the
+            codebase and npm package.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover2.png",
+            alt: "Third Bracket Project",
+            width: 16,
+            height: 12,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "MetaConnect",
+        timeframe: "2019 - 2023",
+        role: "Lead Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Lead the developement team while collaborate with designer and
+            client.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Led a cross-functional team to launch a new product line,
+            contributing to a 15% increase in overall company revenue.
           </>,
         ],
         images: [],
@@ -159,12 +202,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Swinburne University of Technology, Sarawak",
+        description: <>Studied computer science.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "AWS Cloud Practitioneer",
+        description: <>Certified AWS Cloud Practitioneer</>,
       },
     ],
   },
@@ -173,49 +216,26 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
         title: "Next.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Building custom full stack aplication with Next.js + Bracket UI +
+            React.
+          </>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
           {
             name: "Next.js",
             icon: "nextjs",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "TypeScript",
+            icon: "typescript",
+          },
+
+          {
+            name: "Bracket UI",
+            icon: "tailwindcss",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -224,7 +244,33 @@ const about: About = {
             src: "/images/projects/project-01/cover-04.jpg",
             alt: "Project image",
             width: 16,
-            height: 9,
+            height: 12,
+          },
+        ],
+      },
+
+      {
+        title: "PayloadCMS",
+        description: <>Able to create almost any custom cms with payloadCMS.</>,
+        tags: [
+          {
+            name: "PayloadCMS",
+            icon: "payload",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover3.png",
+            alt: "Project image",
+            width: 16,
+            height: 12,
+          },
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 12,
           },
         ],
       },
@@ -259,42 +305,22 @@ const gallery: Gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/cover4.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/gallery/cover5.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/gallery/cover6.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/gallery/cover7.png",
       alt: "image",
       orientation: "vertical",
     },

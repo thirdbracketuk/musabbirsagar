@@ -15,6 +15,7 @@ export type Person = {
   firstName: string;
   /** Last name of the person */
   lastName: string;
+  agency: string;
   /** The name you want to display, allows variations like nicknames */
   name: string;
   /** Role or job title */
